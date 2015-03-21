@@ -10,7 +10,7 @@ const uglify = require('gulp-uglify')
 const size = require('gulp-size')
 
 gulp.task('js', function() {
-    return gulp.src(config.src)
+    return gulp.src(config.entry)
                .pipe(browserify({
                    transform: ['babelify'],
                    debug: true
@@ -21,7 +21,7 @@ gulp.task('js', function() {
 })
 
 gulp.task('js:bundle', function() {
-    return gulp.src(config.src)
+    return gulp.src(config.entry)
                .pipe(browserify({
                    transform: ['babelify'],
                    debug: false

@@ -1,0 +1,39 @@
+/**
+ * Header
+ */
+
+#header {
+  padding-top: 1em;
+}
+
+#landing-hero {
+  margin-top: 2em;
+
+  .landing-hero {
+    &-image {
+      position: relative;
+
+      @include span(10);
+    }
+
+    &-entry {
+      position: absolute;
+      left: 60%;
+      right: -20%;
+      bottom: 10%;
+      padding: 2em;
+      z-index: 999;
+
+      font-family: $serif;
+      letter-spacing: 0.05em;
+      line-height: 1.25em;
+      background: $white;
+    }
+
+
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+}

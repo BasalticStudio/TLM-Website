@@ -1,0 +1,19 @@
+/**
+ * Settings
+ */
+
+// Color Settings
+$white: white;
+$black: black;
+
+// Font Settings
+$serif: 'Merriweather', 'hanami', serif;
+
+// Grid Settings
+$susy: (
+  columns: 12,
+  column-width: 80px,
+  debug: (
+    image: hide
+  )
+);

@@ -6,7 +6,18 @@
 @import "susy/sass/susy";
 
 body {
+  opacity: 0;
 
+  background: darken(white, 5%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  @include container;
+  @include show-grid;
 }
 
 /* IE8 Warning */
@@ -43,5 +54,6 @@ body {
   }
   * {
     transition: opacity 1s ease-out;
+    transition-delay: 0.1s;
   }
 }

@@ -15,7 +15,8 @@ module.exports = {
         dest: `${DEST_BASE}`,
     },
     javascript: {
-        src:`${SRC_BASE}app/app.js`,
+        entry:`${SRC_BASE}app/app.js`,
+        src: `${SRC_BASE}app/**/*.{js,jsx}`,
         tmp: `${TMP_BASE}js/`,
         dest: `${DEST_BASE}js/`,
     },
@@ -39,7 +40,7 @@ module.exports = {
         autoOpen: true,
         baseDir: [TMP_BASE, DEST_BASE],
         routes: {
-            './vendor': './bower_components'
+            '/vendor': './bower_components'
         }
     },
     parse: {

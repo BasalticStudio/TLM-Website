@@ -16,6 +16,8 @@ gulp.task('watch', ['js', 'sass', 'html', 'images'], function() {
         }
     })
 
+    console.log(config.browserSync);
+
     gulp.watch(config.javascript.src, ['js', reload])
     gulp.watch(config.images.src, ['images', reload])
     gulp.watch(config.html.src, ['html', reload])
