@@ -7,7 +7,7 @@ const config = require('../config')
 const browserSync = require('browser-sync')
 const reload = browserSync.reload
 
-gulp.task('watch', function() {
+gulp.task('watch', ['js', 'sass', 'html', 'images'], function() {
     browserSync({
         server: {
             open: config.browserSync.autoOpen,

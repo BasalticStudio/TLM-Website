@@ -28,3 +28,9 @@ node_modules
 
 # Environment
 .env
+
+# Project
+tmp/
+bundle/
+deploy/
+bower_components/

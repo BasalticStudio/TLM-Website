@@ -1,0 +1,47 @@
+/**
+ * Base Style
+ */
+
+@import "sanitize/sanitize";
+@import "susy/sass/susy";
+
+body {
+
+}
+
+/* IE8 Warning */
+.browserupgrade {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  padding: 2em 1em;
+
+  color: white;
+  background: darken(red, 25%);
+
+  text-align: center;
+
+   strong {
+     text-transform: uppercase;
+     text-decoration: underline;
+   }
+}
+
+/* JustFont Settings */
+
+.jf-loading body {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.jf-active, .jf-inactive {
+  body {
+    opacity: 1;
+    visibility: visible;
+  }
+  * {
+    transition: opacity 1s ease-out;
+  }
+}

@@ -19,6 +19,7 @@ gulp.task('sass', function() {
                     imagePath: config.imagePath
                 }))
                 .on('error', gutil.log)
+                .on('error', function() { this.emit('end') })
                 .pipe(autoprefixer())
                 .pipe(sourcemaps.write())
                 .pipe(gulp.dest(config.tmp))
@@ -34,6 +35,7 @@ gulp.task('sass:bundle', function() {
                     outputStyle: 'compressed'
                 }))
                 .on('error', gutil.log)
+                .on('error', function() { this.emit('end') })
                 .pipe(autoprefixer())
                 .pipe(gulp.dest(config.dest))
                 .pipe(size({ title: 'sass' }))

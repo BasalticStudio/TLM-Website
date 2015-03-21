@@ -23,7 +23,7 @@ module.exports = {
         src: `${SRC_BASE}sass/**/*.{sass,scss}`,
         tmp: `${TMP_BASE}css/`,
         dest: `${DEST_BASE}css/`,
-        includePaths: [],
+        includePaths: ['extra-sass'],
         imagePath: '/images',
     },
     images: {
@@ -32,7 +32,7 @@ module.exports = {
         dest: `${DEST_BASE}images/`
     },
     bower: {
-        enable: false,
+        enable: true,
         dest: `${DEST_BASE}vendor/`
     },
     browserSync: {

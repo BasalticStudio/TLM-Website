@@ -1,5 +1,10 @@
+/**
+ * Main Style
+ */
 
-body {
-  color: black;
-  background: darken(red, 10%);
-}
+@import "settings";
+@import "mixin";
+
+@import "base";
+@import "module";
+@import "layout";
