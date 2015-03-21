@@ -1,7 +1,7 @@
 {
   "name": "The-Lost-Mythologies",
   "version": "1.0.0",
-  "description": "The Lost Mythologies Offical Website",
+  "description": "The Lost Mythologies Official Website",
   "main": "app/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

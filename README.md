@@ -1,4 +1,4 @@
-The Lost Mythologies Offical Website
+The Lost Mythologies Official Website
 ===
 
 Ming Chung University Digital Media Design 12th Game Major Graduate Project.
@@ -14,7 +14,7 @@ PARSE_APP_ID=(Your Parse Application ID)
 PARSE_MASTER_KEY=(Your Parse Application Master Key)
 ```
 
-Now, run `npm install` to setup development environment.
+Now, run `npm install && git submodule update` to setup development environment.
 
 > `gulp-sass@1.3.3` use `node-sass@2.0.1` and only work on some node/iojs version (due to precompiled config), this project build under iojs-v1.2.0
 
