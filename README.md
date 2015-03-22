@@ -1,6 +1,8 @@
 The Lost Mythologies Official Website
 ===
 
+[![Build Status](https://travis-ci.org/elct9620/TLM-Website.svg?branch=master)](https://travis-ci.org/elct9620/TLM-Website)
+
 Ming Chung University Digital Media Design 12th Game Major Graduate Project.
 
 Setup
