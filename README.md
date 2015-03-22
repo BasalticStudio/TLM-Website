@@ -14,6 +14,7 @@ Create a `.env` file and fill Parse.com information like below:
 PARSE_APP_NAME=(Your Parse Application Name)
 PARSE_APP_ID=(Your Parse Application ID)
 PARSE_MASTER_KEY=(Your Parse Application Master Key)
+PARSE_JAVASCRIPT_KEY=(Your Parse Application JavaScript Key)
 ```
 
 Now, run `npm install && git submodule update` to setup development environment.
