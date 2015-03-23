@@ -32,6 +32,11 @@ module.exports = {
         tmp: `${TMP_BASE}images/`,
         dest: `${DEST_BASE}images/`
     },
+    vendor: {
+        src: `${SRC_BASE}vendor/**/*`,
+        tmp: `${TMP_BASE}`,
+        dest: `${DEST_BASE}`
+    },
     bower: {
         enable: true,
         dest: `${DEST_BASE}vendor/`
