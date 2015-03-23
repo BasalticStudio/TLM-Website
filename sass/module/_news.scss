@@ -1,0 +1,73 @@
+/**
+ * News Module
+ */
+
+.news {
+
+}
+
+.news-item {
+  @include span(10);
+  @include push(1);
+
+  position: relative;
+  padding: 2em 1em;
+
+  background: $white;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    right: 2em;
+    bottom: 0;
+    left: 2em;
+
+    border-bottom: 1px solid darken($white, 15%);
+  }
+
+  &:last-child {
+    &:after { border: none; }
+  }
+}
+
+.news-date {
+  @include span(1 of 10);
+
+  text-align: center;
+
+  &-year {
+    display: block;
+
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+
+  &-month {
+    margin-right: 0.5em;
+    text-transform: uppercase;
+  }
+
+  &-month, &-day {
+    font-size: 0.9em;
+  }
+}
+
+.news-entry {
+  @include span(9 of 10 omega);
+
+  font-family: $serif;
+}
+
+.news-label {
+  position: absolute;
+  right: -0.5em;
+  top: 1em;
+
+  padding: 0.25em 1em 0.15em;
+
+  font-family: $serif;
+
+  color: $white;
+  background: $primaryColor;
+}
