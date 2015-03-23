@@ -18,7 +18,7 @@ export default class Navigation extends React.Component {
         return MenuItem.map((item, key) => {
             return (
                 <li key={key} className="nav-item">
-                    <a href={item.href} title={item.name}>
+                    <a href={item.href} title={item.name} className="scroll">
                         {item.name}
                         <span className="note">{item.note}</span>
                     </a>
