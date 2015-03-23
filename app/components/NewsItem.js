@@ -6,9 +6,10 @@ import React from 'react'
 
 export default class NewsItem extends React.Component {
     _formatedTime() {
-        let year = this.props.time.getFullYear()
-        let month = this.props.time.toLocaleString("en-us", {month: "short"})
-        let day = this.props.time.getDate()
+        let time = this.props.news.createdAt
+        let year = time.getFullYear()
+        let month = time.toLocaleString("en-us", {month: "short"})
+        let day = time.getDate()
         return  [
             <span className="news-date-year" key={0}>{year}</span>,
             <span className="news-date-month" key={1}>{month}</span>,
@@ -22,10 +23,10 @@ export default class NewsItem extends React.Component {
                     {this._formatedTime()}
                 </div>
                 <div className="news-entry">
-                    {this.props.content}
+                    {this.props.news.get('entry')}
                 </div>
                 <div className="news-label">
-                    {this.props.label}
+                    {this.props.news.get('label')}
                 </div>
             </article>
         )

@@ -5,16 +5,34 @@
 import React from 'react'
 
 import NewsItem from './NewsItem'
-
-var news = [
-    { content: '遊戲官網正式上線', time: new Date(), label: '公告' }
-]
+import NewsStore from '../stores/News'
+import NewsAction from '../actions/News'
 
 export default class News extends React.Component {
+    constructor() {
+        this.state = {
+            news: NewsStore.getAll()
+        }
+
+        this._onNewsUpdate = () => {
+            this.setState({
+                news: NewsStore.getAll()
+            })
+        }
+
+    }
+
+    componentDidMount() {
+        NewsStore.addChangeListener(this._onNewsUpdate)
+        NewsAction.load()
+    }
+    componentWillUnmount() {
+        NewsStore.removeChangeListener(this._onNewsUpdate);
+    }
     _getNewsItems() {
-        return news.map((item, key) => {
+        return this.state.news.map((item, key) => {
             return (
-                <NewsItem key={key} {...item} />
+                <NewsItem key={key} news={item} />
             )
         })
     }
