@@ -4,8 +4,6 @@
 
 import React from 'react'
 
-import StoryBoard from './StoryBoard'
-
 export default class Story extends React.Component {
     render() {
         return (
