@@ -8,6 +8,7 @@ import Header from './Header'
 import LandingHero from './LandingHero'
 import News from './News'
 import Story from './Story'
+import Footer from './Footer'
 
 export default class Application extends React.Component {
     render() {
@@ -17,6 +18,7 @@ export default class Application extends React.Component {
                 <LandingHero/>
                 <News/>
                 <Story/>
+                <Footer/>
             </div>
         )
     }
