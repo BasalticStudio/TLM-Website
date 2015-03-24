@@ -7,9 +7,9 @@ import React from 'react'
 export default class Team extends React.Component {
     render() {
         return (
-            <div id="team" className="container">
+            <section id="team" className="container">
 
-            </div>
+            </section>
         )
     }
 }
