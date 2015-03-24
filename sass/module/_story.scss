@@ -1,0 +1,47 @@
+/**
+ * Story
+ */
+
+.story-board {
+  position: relative;
+  padding: 3.75em;
+  padding-bottom: 0;
+
+  font-family: $serif;
+
+  zoom: 1;
+  overflow: hidden;
+
+  background: $white;
+
+  &:last-child {
+    padding-bottom: 3.75em;
+  }
+}
+
+.story-image {
+  @include span(5);
+
+  .right & { @include span(5 omega); }
+}
+
+.story-entry {
+
+  @include span(7 omega);
+
+  .right & {
+    @include span(7);
+  }
+
+  p {
+    margin-bottom: 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-overlay {
+
+  }
+}

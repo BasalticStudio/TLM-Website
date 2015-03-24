@@ -7,6 +7,7 @@ import React from 'react'
 import Header from './Header'
 import LandingHero from './LandingHero'
 import News from './News'
+import Story from './Story'
 
 export default class Application extends React.Component {
     render() {
@@ -15,6 +16,7 @@ export default class Application extends React.Component {
                 <Header/>
                 <LandingHero/>
                 <News/>
+                <Story/>
             </div>
         )
     }
