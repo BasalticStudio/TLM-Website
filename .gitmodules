@@ -6,4 +6,4 @@
 	url = https://github.com/ericam/susy.git
 [submodule "extra-sass/animate"]
 	path = extra-sass/animate
-	url = git@github.com:geoffgraham/animate.scss.git
+	url = https://github.com/geoffgraham/animate.scss.git
