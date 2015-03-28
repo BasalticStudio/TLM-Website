@@ -3,8 +3,32 @@
  */
 
 #download {
-  padding: 1em;
+  margin-top: 2em;
 
-  text-align: center;
-  background: $white;
+  .landing-hero {
+    &-image {
+      position: relative;
+
+      @include span(8 omega);
+    }
+
+    &-entry {
+      position: absolute;
+      left: -50%;
+      right: 70%;
+      bottom: 10%;
+      padding: 2em;
+      z-index: 999;
+
+      font-family: $serif;
+      letter-spacing: 0.05em;
+      line-height: 1.25em;
+      background: $white;
+    }
+
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
 }
