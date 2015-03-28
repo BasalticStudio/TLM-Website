@@ -41,6 +41,10 @@ $color3: #35334d;
 
       &:hover {
         opacity: 1;
+
+        .diamond-center {
+           transform: translate(-50%, -50%);
+        }
       }
 
       &.color1 { background: rgba($color1, 0.8); }
@@ -54,6 +58,8 @@ $color3: #35334d;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
+
+    transition: 250ms ease-in;
   }
 }

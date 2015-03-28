@@ -47,7 +47,7 @@ export default class Team extends React.Component {
                     <Diamond className="color-diamond"/>
                     <Diamond className="color-diamond"/>
                     <Diamond className="color-diamond"/>
-                    <Diamond fillImage="/images/Members/default.jpg">
+                    <Diamond fillImage="/images/Members/cookie.jpg">
                         <div className="diamond-hover color1">
                             <div className="diamond-center">
                                 <h3>陳昱睿</h3>
@@ -55,7 +55,7 @@ export default class Team extends React.Component {
                             </div>
                         </div>
                     </Diamond>
-                    <Diamond fillImage="/images/Members/default.jpg">
+                    <Diamond fillImage="/images/Members/jimmy.jpg">
                         <div className="diamond-hover color1">
                             <div className="diamond-center">
                                 <h3>吳俊明</h3>
