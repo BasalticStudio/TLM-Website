@@ -1,0 +1,59 @@
+/**
+ * Team
+ */
+
+$color1: #545f69;
+$color2: #4c2f2f;
+$color3: #35334d;
+
+#team {
+  padding: 1em;
+
+  @each $name, $color in ('', lighten($black, 5%)) ,('.color1', $color1), ('.color2', $color2), ('.color3', $color3) {
+    .color-diamond#{$name} {
+      .diamond-box-inner {
+        background: $color;
+      }
+    }
+  }
+
+  .diamond-box {
+    border-radius: 10px;
+  }
+
+  .diamond-box-inner {
+    font-family: $serif;
+    color: white;
+
+    .diamond-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      background: rgba(darken($primaryColor, 50%), 0.8);
+
+      font-size: 15px;
+
+      opacity: 0;
+      transition: 100ms ease-in;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.color1 { background: rgba($color1, 0.8); }
+      &.color2 { background: rgba($color2, 0.8); }
+      &.color3 { background: rgba($color3, 0.8); }
+    }
+
+  }
+
+  .diamond-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
