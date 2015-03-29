@@ -14,8 +14,11 @@
         <meta property="og:site_name" content="遠古神話 - The Lost Mythologies">
         <meta property="og:description" content="銘傳大學 數位媒體設計學系 第十二屆 遊戲組 新一代參展作品">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <script>
+          if (window.location.protocol != "https:" && window.location.hostname != "localhost") {
+            window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+          }
+        </script>
 
         <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
