@@ -22,6 +22,9 @@ export default class News extends React.Component {
 
     }
 
+    componentDidUpdate() {
+        _jf.flush()
+    }
     componentDidMount() {
         NewsStore.addChangeListener(this._onNewsUpdate)
         NewsAction.load()
