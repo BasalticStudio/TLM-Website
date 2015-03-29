@@ -4,7 +4,6 @@
 
 import React from 'react'
 
-import TeamMember from './TeamMember'
 import DiamondGroup from './DiamondGroup'
 import Diamond from './Diamond'
 

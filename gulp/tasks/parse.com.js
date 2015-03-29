@@ -9,6 +9,7 @@ const config = require('../config')
 const parseConfig = config.parse
 const template = require('gulp-template')
 const size = require('gulp-size')
+const shell = require('gulp-shell')
 
 
 gulp.task('parse:config', function() {
@@ -30,3 +31,7 @@ gulp.task('parse:prepare', ['bundle', 'parse:cloud', 'parse:config'], function()
                .pipe(gulp.dest(`${parseConfig.dest}/public`))
                .pipe(size({title: 'parse:prepare'}))
 })
+
+gulp.task('parse:deploy', ['parse:prepare'], shell.task([
+    `cd ${parseConfig.dest} && parse deploy`,
+]))
