@@ -7,7 +7,6 @@
 @import "animate/animate";
 
 body {
-  opacity: 0;
   font-family: $sans;
 
   background: darken(white, 5%);
@@ -52,9 +51,12 @@ img {
 
 /* JustFont Settings */
 
-.jf-loading body {
-  opacity: 0;
-  visibility: hidden;
+.jf-loading {
+
+  .loading-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
 
   &:after {
     content: "";
@@ -70,12 +72,11 @@ img {
     background: image-url('logo-black-min.png') no-repeat center;
 
     @include flash($duration: 5s, $count: infinite);
-
   }
 }
 
 .jf-active, .jf-inactive {
-  body {
+  .loading-hide {
     opacity: 1;
     visibility: visible;
   }
