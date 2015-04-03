@@ -37,3 +37,25 @@
     margin-bottom: 1em;
   }
 }
+
+#topbar {
+  width: 48px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 9999;
+
+  transform: translteY(-50%);
+
+  text-align: right;
+
+  font-size: 0;
+
+  a {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
