@@ -34,3 +34,5 @@ tmp/
 bundle/
 deploy/
 bower_components/
+
+.DS_Store
